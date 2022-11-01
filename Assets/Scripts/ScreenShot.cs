@@ -46,7 +46,7 @@ public class ScreenShot : MonoBehaviour
 #endif
         }
     }
-    private string FolderPath => $"{RootPath}/{folderName}";
+    private string FolderPath => $"{Application.persistentDataPath}{folderName}";
     private string TotalPath => $"{FolderPath}/{fileName}_{DateTime.Now.ToString("MMdd_HHmmss")}.{extName}";
 
     private string lastSavedPath;
@@ -69,7 +69,7 @@ public class ScreenShot : MonoBehaviour
     ***********************************************************************/
     #region .
     /// <summary> UI 포함 전체 화면 캡쳐 </summary>
-    private void TakeScreenShotFull()
+    public void TakeScreenShotFull()
     {
 #if UNITY_ANDROID
         CheckAndroidPermissionAndDo(Permission.ExternalStorageWrite, () => StartCoroutine(TakeScreenShotRoutine()));
@@ -79,7 +79,7 @@ public class ScreenShot : MonoBehaviour
     }
 
     /// <summary> UI 미포함, 현재 카메라가 렌더링하는 화면만 캡쳐 </summary>
-    private void TakeScreenShotWithoutUI()
+    public void TakeScreenShotWithoutUI()
     {
 #if UNITY_ANDROID
         CheckAndroidPermissionAndDo(Permission.ExternalStorageWrite, () => _willTakeScreenShot = true);
@@ -88,7 +88,7 @@ public class ScreenShot : MonoBehaviour
 #endif
     }
 
-    private void ReadScreenShotAndShow()
+    public void ReadScreenShotAndShow()
     {
 #if UNITY_ANDROID
         CheckAndroidPermissionAndDo(Permission.ExternalStorageRead, () => ReadScreenShotFileAndShow(imageToShow));
