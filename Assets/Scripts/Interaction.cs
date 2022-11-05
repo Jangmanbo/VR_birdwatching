@@ -16,7 +16,7 @@ public class Interaction : MonoBehaviour
     {
         if (OVRInput.GetDown(OVRInput.Button.One))
         {
-            screenShot.TakeScreenShotFull();
+            screenShot.TakeScreenShot();
         }
         if (OVRInput.GetDown(OVRInput.Button.Two))
         {

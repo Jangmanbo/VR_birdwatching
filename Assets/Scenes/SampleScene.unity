@@ -152,10 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42dd564618cdd824a93a33add816d81c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenShotButton: {fileID: 588564247}
-  screenShotWithoutUIButton: {fileID: 1402294215}
-  readAndShowButton: {fileID: 1691595776}
   imageToShow: {fileID: 209528321}
+  canvas: {fileID: 1518626891}
   camera: {fileID: 1296092215}
   folderName: ScreenShots
   fileName: MyScreenShot

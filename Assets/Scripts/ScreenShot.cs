@@ -15,11 +15,9 @@ public class ScreenShot : MonoBehaviour
     *                               Public Fields
     ***********************************************************************/
     #region .
-    public Button screenShotButton;          // 전체 화면 캡쳐
-    public Button screenShotWithoutUIButton; // UI 제외 화면 캡쳐
-    public Button readAndShowButton; // 저장된 경로에서 스크린샷 파일 읽어와서 이미지에 띄우기
     public Image imageToShow;        // 띄울 이미지 컴포넌트
-    public Camera camera;
+    public GameObject canvas;       // 캔버스
+    public Camera camera;   // 카메라
 
     //public ScreenShotFlash flash;
 
@@ -47,7 +45,7 @@ public class ScreenShot : MonoBehaviour
 #endif
         }
     }
-    private string FolderPath => $"{Application.persistentDataPath}{folderName}";
+    private string FolderPath => $"{Application.persistentDataPath}/{folderName}";
     private string TotalPath => $"{FolderPath}/{fileName}_{DateTime.Now.ToString("MMdd_HHmmss")}.{extName}";
 
     private string lastSavedPath;
@@ -55,22 +53,11 @@ public class ScreenShot : MonoBehaviour
     #endregion
 
     /***********************************************************************
-    *                               Unity Events
-    ***********************************************************************/
-    #region .
-    private void Awake()
-    {
-        screenShotButton.onClick.AddListener(TakeScreenShotFull);
-        screenShotWithoutUIButton.onClick.AddListener(TakeScreenShotWithoutUI);
-        readAndShowButton.onClick.AddListener(ReadScreenShotAndShow);
-    }
-    #endregion
-    /***********************************************************************
     *                               Button Event Handlers
     ***********************************************************************/
     #region .
-    /// <summary> UI 포함 전체 화면 캡쳐 </summary>
-    public void TakeScreenShotFull()
+    /// <summary> UI 제외 화면 캡쳐 </summary>
+    public void TakeScreenShot()
     {
 #if UNITY_ANDROID
         CheckAndroidPermissionAndDo(Permission.ExternalStorageWrite, () => StartCoroutine(TakeScreenShotRoutine()));
@@ -79,6 +66,7 @@ public class ScreenShot : MonoBehaviour
 #endif
     }
 
+    /*
     /// <summary> UI 미포함, 현재 카메라가 렌더링하는 화면만 캡쳐 </summary>
     public void TakeScreenShotWithoutUI()
     {
@@ -88,6 +76,7 @@ public class ScreenShot : MonoBehaviour
         _willTakeScreenShot = true;
 #endif
     }
+    */
 
     public void ReadScreenShotAndShow()
     {
@@ -152,6 +141,8 @@ public class ScreenShot : MonoBehaviour
     {
         string totalPath = TotalPath; // 프로퍼티 참조 시 시간에 따라 이름이 결정되므로 캐싱
 
+        canvas.SetActive(false);    // UI 비활성화
+
         // https://gamedevbeginner.com/how-to-capture-the-screen-in-unity-3-methods/#screenshot_without_ui
         RenderTexture screenTexture = new RenderTexture(Screen.width, Screen.height, 16);
         camera.targetTexture = screenTexture;
@@ -161,6 +152,7 @@ public class ScreenShot : MonoBehaviour
         renderedTexture.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
         RenderTexture.active = null;
 
+        canvas.SetActive(true);     // UI 활성화
 
         bool succeeded = true;
         try
