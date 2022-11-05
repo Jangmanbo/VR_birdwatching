@@ -156,6 +156,7 @@ MonoBehaviour:
   screenShotWithoutUIButton: {fileID: 1402294215}
   readAndShowButton: {fileID: 1691595776}
   imageToShow: {fileID: 209528321}
+  camera: {fileID: 1296092215}
   folderName: ScreenShots
   fileName: MyScreenShot
   extName: png
@@ -787,6 +788,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 3}
+--- !u!20 &1296092215 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2015248, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+  m_PrefabInstance: {fileID: 1399386199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1370639140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1294,7 +1300,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
   m_PrefabInstance: {fileID: 1399386199}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1585908236
+--- !u!114 &1585908241
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
