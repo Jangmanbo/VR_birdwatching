@@ -99,6 +99,7 @@ public class ScreenShot : MonoBehaviour
         CaptureScreenAndSave();
     }
 
+    /*
     // UI 제외하고 현재 카메라가 렌더링하는 모습 캡쳐
     private void OnPostRender()
     {
@@ -108,6 +109,7 @@ public class ScreenShot : MonoBehaviour
             CaptureScreenAndSave();
         }
     }
+    */
 
 #if UNITY_ANDROID
     /// <summary> 안드로이드 - 권한 확인하고, 승인시 동작 수행하기 </summary>
@@ -150,6 +152,7 @@ public class ScreenShot : MonoBehaviour
         camera.Render();
         Texture2D renderedTexture = new Texture2D(Screen.width, Screen.height);
         renderedTexture.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
+        renderedTexture = ScaleTexture(renderedTexture, renderedTexture.width / 4, renderedTexture.height / 4); // 이미지 텍스쳐 사이즈 조정
         RenderTexture.active = null;
 
         canvas.SetActive(true);     // UI 활성화
@@ -185,6 +188,24 @@ public class ScreenShot : MonoBehaviour
 
         // 갤러리 갱신
         RefreshAndroidGallery(totalPath);
+    }
+
+    // 텍스쳐 사이즈 조정 https://answers.unity.com/questions/150942/texture-scale.html
+    private Texture2D ScaleTexture(Texture2D source, int targetWidth, int targetHeight)
+    {
+        Texture2D result = new Texture2D(targetWidth, targetHeight, source.format, false);
+        float incX = (1.0f / (float)targetWidth);
+        float incY = (1.0f / (float)targetHeight);
+        for (int i = 0; i < result.height; ++i)
+        {
+            for (int j = 0; j < result.width; ++j)
+            {
+                Color newColor = source.GetPixelBilinear((float)j / (float)result.width, (float)i / (float)result.height);
+                result.SetPixel(j, i, newColor);
+            }
+        }
+        result.Apply();
+        return result;
     }
 
     [System.Diagnostics.Conditional("UNITY_ANDROID")]
