@@ -46,7 +46,7 @@ public class ScreenShot : MonoBehaviour
         }
     }
     private string FolderPath => $"{Application.persistentDataPath}/{folderName}";
-    private string TotalPath => $"{FolderPath}/{fileName}_{DateTime.Now.ToString("MMdd_HHmmss")}.{extName}";
+    private string FileName => $"{DateTime.Now.ToString("MMdd_HHmmss")}.{extName}";
 
     private string lastSavedPath;
 
@@ -57,10 +57,10 @@ public class ScreenShot : MonoBehaviour
     ***********************************************************************/
     #region .
     /// <summary> UI 제외 화면 캡쳐 </summary>
-    public void TakeScreenShot()
+    public void TakeScreenShot(string bird)
     {
 #if UNITY_ANDROID
-        CheckAndroidPermissionAndDo(Permission.ExternalStorageWrite, () => StartCoroutine(TakeScreenShotRoutine()));
+        CheckAndroidPermissionAndDo(Permission.ExternalStorageWrite, () => StartCoroutine(TakeScreenShotRoutine(bird)));
 #else
         StartCoroutine(TakeScreenShotRoutine());
 #endif
@@ -93,10 +93,10 @@ public class ScreenShot : MonoBehaviour
     #region .
 
     // UI 포함하여 현재 화면에 보이는 모든 것 캡쳐
-    private IEnumerator TakeScreenShotRoutine()
+    private IEnumerator TakeScreenShotRoutine(string bird)
     {
         yield return new WaitForEndOfFrame();
-        CaptureScreenAndSave();
+        CaptureScreenAndSave(bird);
     }
 
     /*
@@ -139,9 +139,10 @@ public class ScreenShot : MonoBehaviour
 #endif
 
     /// <summary> 스크린샷을 찍고 경로에 저장하기 </summary>
-    private void CaptureScreenAndSave()
+    private void CaptureScreenAndSave(string bird)
     {
-        string totalPath = TotalPath; // 프로퍼티 참조 시 시간에 따라 이름이 결정되므로 캐싱
+        string folderPath = $"{FolderPath}/{bird}";
+        string totalPath = $"{folderPath}/{FileName}"; // 프로퍼티 참조 시 시간에 따라 이름이 결정되므로 캐싱
 
         canvas.SetActive(false);    // UI 비활성화
 
@@ -161,9 +162,9 @@ public class ScreenShot : MonoBehaviour
         try
         {
             // 폴더가 존재하지 않으면 새로 생성
-            if (Directory.Exists(FolderPath) == false)
+            if (Directory.Exists(folderPath) == false)
             {
-                Directory.CreateDirectory(FolderPath);
+                Directory.CreateDirectory(folderPath);
             }
 
             // 스크린샷 저장

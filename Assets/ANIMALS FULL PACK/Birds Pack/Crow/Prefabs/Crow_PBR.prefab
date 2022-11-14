@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 456188}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CrowTailLeftFeatherD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 430916}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CrowTailRightFeatherC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 454022}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ L Toe11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 421118}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ L Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415848}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ R Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 431602}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 421242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 405802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ L Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 472802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 403812}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CrowTailLeftFeatherB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,7 +320,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415698}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ L Toe02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 443204}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 401250}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ R Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,7 +412,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 482626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ Queue de cheval 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -442,7 +442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 453950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ R Toe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 428254}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CrowTailRightFeatherA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 473868}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +533,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 484228}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ L Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,7 +564,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 463610}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -594,7 +594,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 412762}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -626,7 +626,7 @@ GameObject:
   m_Component:
   - component: {fileID: 484138}
   - component: {fileID: 13799312}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SK_Crow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -767,7 +767,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 474294}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ R Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -798,7 +798,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 427760}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ L Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -830,7 +830,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 471120}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ R Toe01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -861,7 +861,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 456804}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ Pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -904,7 +904,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 476358}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -934,7 +934,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 451474}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -967,7 +967,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 426604}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CrowTailLeftFeatherA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -997,7 +997,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 444970}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CrowTailRightFeatherB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1027,7 +1027,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 457388}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ R Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1059,7 +1059,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 431100}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1089,7 +1089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 468674}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ R Toe12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1119,7 +1119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 494614}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ L Toe12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1149,7 +1149,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 408084}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CrowTailRightFeatherE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1179,7 +1179,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 452504}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1209,7 +1209,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 488636}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ R Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1240,7 +1240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 420774}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CrowTailRightFeatherD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1271,7 +1271,8 @@ GameObject:
   m_Component:
   - component: {fileID: 437376}
   - component: {fileID: 9560256}
-  m_Layer: 0
+  - component: {fileID: 271579071493433242}
+  m_Layer: 6
   m_Name: Crow_PBR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1313,6 +1314,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &271579071493433242
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163500}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.31
+  m_Center: {x: 0, y: 0.17, z: -0.06}
 --- !u!1 &164066
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,7 +1336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 412172}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ R Toe02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1352,7 +1366,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 423960}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1382,7 +1396,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 468106}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CrowTailLeftFeatherE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1412,7 +1426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 470528}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1442,7 +1456,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 436838}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ R Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1475,7 +1489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 456980}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1505,7 +1519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 410124}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1535,7 +1549,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 454836}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ R UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1569,7 +1583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400494}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ R Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1600,7 +1614,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 446442}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ L Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1631,7 +1645,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 438030}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ L Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1662,7 +1676,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 492090}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1692,7 +1706,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 412370}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ R Toe11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1723,7 +1737,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 407754}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1753,7 +1767,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 451154}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1784,7 +1798,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 401034}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1814,7 +1828,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 424292}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ L UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1848,7 +1862,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 440536}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ L Toe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1879,7 +1893,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 489466}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1909,7 +1923,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 429252}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ L HorseLink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1940,7 +1954,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 493184}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1970,7 +1984,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 448698}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CrowTailLeftFeatherC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2000,7 +2014,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 446842}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ L Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2031,7 +2045,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 461402}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ L Toe01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2062,7 +2076,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 429878}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CROW_ R HorseLink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
