@@ -148,13 +148,19 @@ public class ScreenShot : MonoBehaviour
 
         // https://gamedevbeginner.com/how-to-capture-the-screen-in-unity-3-methods/#screenshot_without_ui
         RenderTexture screenTexture = new RenderTexture(Screen.width, Screen.height, 16);
+        RenderTexture originTexture = camera.targetTexture; // 카메라의 기존 텍스쳐 백업
+
         camera.targetTexture = screenTexture;
         RenderTexture.active = screenTexture;
         camera.Render();
+
         Texture2D renderedTexture = new Texture2D(Screen.width, Screen.height);
         renderedTexture.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
         renderedTexture = ScaleTexture(renderedTexture, renderedTexture.width / 4, renderedTexture.height / 4); // 이미지 텍스쳐 사이즈 조정
+
         RenderTexture.active = null;
+
+        camera.targetTexture = originTexture;   // 카메라의 기존 텍스쳐 적용
 
         canvas.SetActive(true);     // UI 활성화
 
