@@ -62,7 +62,7 @@ public class ScreenShot : MonoBehaviour
 #if UNITY_ANDROID
         CheckAndroidPermissionAndDo(Permission.ExternalStorageWrite, () => StartCoroutine(TakeScreenShotRoutine(bird)));
 #else
-        StartCoroutine(TakeScreenShotRoutine());
+        StartCoroutine(TakeScreenShotRoutine(bird));
 #endif
     }
 
