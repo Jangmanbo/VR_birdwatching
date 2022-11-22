@@ -16,7 +16,7 @@ public class PlayerAction : MonoBehaviour
 
     private void Awake()
     {
-        originCamZ = camera.transform.position.z;
+        originCamZ = camera.transform.localPosition.z + zoomAmount.z;
     }
 
     // Update is called once per frame
@@ -65,9 +65,9 @@ public class PlayerAction : MonoBehaviour
     private void CameraZoom(bool zoom)
     {
         if (zoom)   // 확대
-            camera.transform.position += zoomAmount;
+            camera.transform.localPosition += zoomAmount;
         // 처음 카메라 위치보다 뒤로 가지 않도록
-        else if (camera.transform.position.z > originCamZ)  // 축소
-            camera.transform.position -= zoomAmount;
+        else if (camera.transform.localPosition.z > originCamZ)  // 축소
+            camera.transform.localPosition -= zoomAmount;
     }
 }
