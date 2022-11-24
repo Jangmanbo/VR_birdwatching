@@ -6,6 +6,7 @@ public class BirdAction : MonoBehaviour
 {
     private Transform tr;
     private Rigidbody rb;
+    private Animator animator;
     [SerializeField] private float moveSpeed;
     [SerializeField] private float turnSpeed;
 
@@ -16,6 +17,7 @@ public class BirdAction : MonoBehaviour
     {
         tr = GetComponent<Transform>();
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
 
     // Start is called before the first frame update
@@ -38,14 +40,37 @@ public class BirdAction : MonoBehaviour
 
             moveDir = Vector3.forward * (float)rand.NextDouble() * moveSpeed;
 
-            turnDir = new Vector3((float)rand.NextDouble() * 90 - 45, (float)rand.NextDouble() * 180 - 90, (float)rand.NextDouble() * 90 - 45);
+            turnDir = new Vector3(0, (float)rand.NextDouble() * 90 - 45, 0);
             turnDir = turnDir * (float)rand.NextDouble() * turnSpeed;
 
             // Á¤Áö
             if (moveDir.z < 1)
+            {
                 moveDir = turnDir = Vector3.zero;
+                animator.SetBool("isMove", false);
+            }
+            else
+            {
+                animator.SetBool("isMove", true);
+            }
 
             yield return new WaitForSeconds(3f);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer==LayerMask.NameToLayer("Terrain"))
+        {
+            animator.SetBool("isGrounded", true);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Terrain"))
+        {
+            animator.SetBool("isGrounded", false);
         }
     }
 }
