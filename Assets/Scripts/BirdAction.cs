@@ -43,9 +43,15 @@ public class BirdAction : MonoBehaviour
         Vector3 rotation = tr.rotation.eulerAngles;
         // 새가 너무 기울어지지 않도록
         if (Mathf.Abs(rotation.x - 180) < 160)  // 20<x<340
+        {
             turnDir.x = 0;
+            StartCoroutine(Balance());
+        }
         if (Mathf.Abs(rotation.z - 180) < 160)  // 20<z<340
+        {
             turnDir.z = 0;
+            StartCoroutine(Balance());
+        }
     }
 
     private IEnumerator MoveCoroutine()
@@ -94,8 +100,8 @@ public class BirdAction : MonoBehaviour
         moveDir = turnDir = Vector3.zero;
     }
 
-    // 착지 시 오브젝트가 뒤집히지 않도록
-    private IEnumerator Landing()
+    // 평형 유지 (뒤집히지 않도록)
+    private IEnumerator Balance()
     {
         float interval = 1f / landingInterval;
         for (int i = 0; i < landingInterval; i++)
@@ -118,7 +124,7 @@ public class BirdAction : MonoBehaviour
         if (other.gameObject.layer==LayerMask.NameToLayer("Terrain"))
         {
             Stop();
-            StartCoroutine(Landing());
+            StartCoroutine(Balance());
             Animate();
         }
     }
