@@ -42,15 +42,16 @@ public class PlayerAction : MonoBehaviour
     // 카메라에 새가 감지되었는지 확인
     private void TryTakePicture()
     {
+        Debug.Log("PlayerAction 사진 찍기 시도");
         // 새 감지 X
         if (area.detectBird == null)
         {
-            Debug.Log("찍을 새가 없음");
+            Debug.Log("PlayerAction 찍을 새가 없음");
         }
         // 새 감지
         else
         {
-            Debug.Log("새 사진 찍기"); 
+            Debug.Log("PlayerAction 사진 찍기 성공"); 
             TakePicture(area.detectBird.name);
         }
     }

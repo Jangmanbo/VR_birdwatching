@@ -11,7 +11,7 @@ public class CameraArea : MonoBehaviour
     {
         if (other.gameObject.layer==LayerMask.NameToLayer("Bird"))
         {
-            detectBird = other.gameObject;
+            detectBird = other.transform.parent.gameObject;
         }
     }
 
