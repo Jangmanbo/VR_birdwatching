@@ -10,6 +10,7 @@ public class BirdAction : MonoBehaviour
 
     [SerializeField] private float moveSpeed;
     [SerializeField] private float turnSpeed;
+    [SerializeField] private int landingInterval;   // 착지 동작 소요 프레임
 
     [Range(0f, 1f)]
     [SerializeField] private float flyProbability;
@@ -47,7 +48,7 @@ public class BirdAction : MonoBehaviour
             turnDir.z = 0;
     }
 
-    IEnumerator MoveCoroutine()
+    private IEnumerator MoveCoroutine()
     {
         while (true)
         {
@@ -93,6 +94,17 @@ public class BirdAction : MonoBehaviour
         moveDir = turnDir = Vector3.zero;
     }
 
+    // 착지 시 오브젝트가 뒤집히지 않도록
+    private IEnumerator Landing()
+    {
+        float interval = 1f / landingInterval;
+        for (int i = 0; i < landingInterval; i++)
+        {
+            tr.rotation = Quaternion.Slerp(tr.rotation, Quaternion.Euler(new Vector3(0, tr.rotation.eulerAngles.y)), interval * Time.deltaTime);
+            yield return new WaitForFixedUpdate();
+        }
+    }
+
     // 애니메이션 전환
     private void Animate()
     {
@@ -106,6 +118,7 @@ public class BirdAction : MonoBehaviour
         if (other.gameObject.layer==LayerMask.NameToLayer("Terrain"))
         {
             Stop();
+            StartCoroutine(Landing());
             Animate();
         }
     }
