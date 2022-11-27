@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerAction : MonoBehaviour
 {
     [SerializeField]
+    private BirdManager birdManager;
+    [SerializeField]
     private ScreenShot screenShot;
     [SerializeField]
     private GameObject camera;
@@ -70,5 +72,16 @@ public class PlayerAction : MonoBehaviour
         // 처음 카메라 위치보다 뒤로 가지 않도록
         else if (camera.transform.localPosition.z > originCamZ)  // 축소
             camera.transform.localPosition -= zoomAmount;
+    }
+
+    // 플레이어의 콜라이더 영역에서 새가 나감
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Bird"))
+        {
+            var obj = other.transform.parent.gameObject;
+            Debug.Log(other.name + " " + obj.name);
+            birdManager.DeleteBird(obj);
+        }
     }
 }

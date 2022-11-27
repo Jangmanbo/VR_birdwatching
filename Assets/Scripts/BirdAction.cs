@@ -36,7 +36,6 @@ public class BirdAction : MonoBehaviour
 
     private void Update()
     {
-
         tr.Translate(moveDir * Time.deltaTime);
         tr.Rotate(turnDir * Time.deltaTime);
 
