@@ -79,9 +79,8 @@ public class PlayerAction : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Bird"))
         {
-            var obj = other.transform.parent.gameObject;
-            Debug.Log(other.name + " " + obj.name);
-            birdManager.DeleteBird(obj);
+            Debug.Log(other.name);
+            birdManager.DeleteBird(other.gameObject);
         }
     }
 }
