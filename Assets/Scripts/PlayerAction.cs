@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class PlayerAction : MonoBehaviour
 {
-    [SerializeField]
-    private BirdManager birdManager;
-    [SerializeField]
-    private ScreenShot screenShot;
-    [SerializeField]
-    private GameObject camera;
-    [SerializeField]
-    private CameraArea area;
-
     private float originCamZ;   // 처음 카메라 위치
     private Vector3 zoomAmount = new Vector3(0, 0, 0.1f);   // fps당 카메라 이동 벡터
+
+    [SerializeField] private BirdManager birdManager;
+    [SerializeField] private GameObject clipBoard;
+    [SerializeField] private GameObject centerEyeAnchor;
+
+    [SerializeField] private ScreenShot screenShot;
+    [SerializeField] private GameObject camera;
+    [SerializeField] private CameraArea area;
 
     private void Awake()
     {
@@ -29,10 +28,23 @@ public class PlayerAction : MonoBehaviour
 
     private void BtnDown()
     {
-        if (OVRInput.GetDown(OVRInput.Button.One))
+        if (OVRInput.GetDown(OVRInput.Button.One))  // 버튼 A
             TryTakePicture();
-        if (OVRInput.GetDown(OVRInput.Button.Two))
+        if (OVRInput.GetDown(OVRInput.Button.Two))  // 버튼 B
             screenShot.ReadScreenShotAndShow();
+        if (OVRInput.GetDown(OVRInput.Button.Four)) // 버튼 Y
+        {
+            // 메뉴 비활성화
+            if (clipBoard.activeSelf)
+                clipBoard.SetActive(false);
+            // 메뉴 활성화
+            else
+            {
+                clipBoard.transform.position = centerEyeAnchor.transform.position + gameObject.transform.forward * 2;   // 위치 : 플레이어가 현재 바라보는 방향
+                clipBoard.transform.rotation = Quaternion.Euler(new Vector3(clipBoard.transform.rotation.eulerAngles.x, centerEyeAnchor.transform.rotation.eulerAngles.y + 180, clipBoard.transform.rotation.eulerAngles.z));   // 회전값 : 플레이어가 마주보도록
+                clipBoard.SetActive(true);
+            }
+        }
 
         // 카메라 확대/축소
         if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
