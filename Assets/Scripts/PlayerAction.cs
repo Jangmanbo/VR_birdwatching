@@ -65,8 +65,10 @@ public class PlayerAction : MonoBehaviour
         // 새 감지
         else
         {
-            Debug.Log("PlayerAction 사진 찍기 성공"); 
+            Debug.Log("PlayerAction 사진 찍기 성공");
+            int ID = area.detectBird.GetComponent<BirdID>().ID;
             TakePicture(area.detectBird.GetComponent<BirdID>().ID);
+            DataController.instance.data.picture[ID]++;
         }
     }
 
