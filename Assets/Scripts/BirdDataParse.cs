@@ -5,10 +5,35 @@ using UnityEngine;
 public struct Bird
 {
     private string species;
+    public string Species
+    {
+        get { return species; }
+        set { species = value; }
+    }
     private string name;
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
     private string habitat;
+    public string Habitat
+    {
+        get { return habitat; }
+        set { habitat = value; }
+    }
     private string population;
+    public string Population
+    {
+        get { return population; }
+        set { population = value; }
+    }
     private string feature;
+    public string Feature
+    {
+        get { return feature; }
+        set { feature = value; }
+    }
 
     public Bird(string[] row)
     {
