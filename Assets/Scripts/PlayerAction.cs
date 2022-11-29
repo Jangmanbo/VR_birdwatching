@@ -66,14 +66,14 @@ public class PlayerAction : MonoBehaviour
         else
         {
             Debug.Log("PlayerAction 사진 찍기 성공"); 
-            TakePicture(area.detectBird.name);
+            TakePicture(area.detectBird.GetComponent<BirdID>().ID);
         }
     }
 
     // 사진 촬영
-    private void TakePicture(string birdName)
+    private void TakePicture(int ID)
     {
-        screenShot.TakeScreenShot(birdName);
+        screenShot.TakeScreenShot(ID);
     }
 
     // 카메라 확대/축소

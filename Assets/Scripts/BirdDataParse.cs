@@ -5,13 +5,24 @@ using UnityEngine;
 public struct Bird
 {
     private string species;
+    private string name;
     private string habitat;
     private string population;
     private string feature;
 
-    public Bird(string _species, string _habitat, string _population, string _feature)
+    public Bird(string[] row)
+    {
+        species = row[0];
+        name = row[1];
+        habitat = row[2];
+        population = row[3];
+        feature = row[4];
+    }
+
+    public Bird(string _species, string _name, string _habitat, string _population, string _feature)
     {
         species = _species;
+        name = _name;
         habitat = _habitat;
         population = _population;
         feature = _feature;
@@ -20,7 +31,7 @@ public struct Bird
 
 public class BirdDataParse : MonoBehaviour
 {
-    private static Dictionary<string, Bird> BirdDictionary = new Dictionary<string, Bird>();
+    private static List<Bird> birdList = new List<Bird>();
 
     [SerializeField] private TextAsset csvFile = null;
 
@@ -29,9 +40,9 @@ public class BirdDataParse : MonoBehaviour
         SetBirdDictionary();
     }
 
-    public static Bird GetBirdData(string name)
+    public static Bird GetBirdData(int id)
     {
-        return BirdDictionary[name];
+        return birdList[id];
     }
 
     public void SetBirdDictionary()
@@ -50,12 +61,8 @@ public class BirdDataParse : MonoBehaviour
             // 파일의 끝이면 반복문 종료
             if (rowValues[0].Trim() == "") break;
 
-            string name = rowValues[0]; // dictionary의 key
-            Bird bird = new Bird(rowValues[1], rowValues[2], rowValues[3], rowValues[4]);   // 종, 서식지, 개체수, 특징
-
-            BirdDictionary.Add(name, bird); // BirdDictionary에 추가
-
-            Debug.Log(name+rowValues[1]+rowValues[2]+rowValues[3]+rowValues[4]);
+            Bird bird = new Bird(rowValues);
+            birdList.Add(bird); // birdList에 추가
         }
     }
 }

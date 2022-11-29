@@ -57,10 +57,10 @@ public class ScreenShot : MonoBehaviour
     ***********************************************************************/
     #region .
     /// <summary> UI 제외 화면 캡쳐 </summary>
-    public void TakeScreenShot(string bird)
+    public void TakeScreenShot(int ID)
     {
 #if UNITY_ANDROID
-        CheckAndroidPermissionAndDo(Permission.ExternalStorageWrite, () => StartCoroutine(TakeScreenShotRoutine(bird)));
+        CheckAndroidPermissionAndDo(Permission.ExternalStorageWrite, () => StartCoroutine(TakeScreenShotRoutine(ID)));
 #else
         StartCoroutine(TakeScreenShotRoutine(bird));
 #endif
@@ -92,11 +92,11 @@ public class ScreenShot : MonoBehaviour
     ***********************************************************************/
     #region .
 
-    // UI 포함하여 현재 화면에 보이는 모든 것 캡쳐
-    private IEnumerator TakeScreenShotRoutine(string bird)
+    // 현재 화면에 보이는 모든 것 캡쳐
+    private IEnumerator TakeScreenShotRoutine(int ID)
     {
         yield return new WaitForEndOfFrame();
-        CaptureScreenAndSave(bird);
+        CaptureScreenAndSave(ID);
     }
 
     /*
@@ -139,9 +139,9 @@ public class ScreenShot : MonoBehaviour
 #endif
 
     /// <summary> 스크린샷을 찍고 경로에 저장하기 </summary>
-    private void CaptureScreenAndSave(string bird)
+    private void CaptureScreenAndSave(int ID)
     {
-        string folderPath = $"{FolderPath}/{bird}";
+        string folderPath = $"{FolderPath}/{ID}";
         string totalPath = $"{folderPath}/{FileName}"; // 프로퍼티 참조 시 시간에 따라 이름이 결정되므로 캐싱
 
         canvas.SetActive(false);    // UI 비활성화
