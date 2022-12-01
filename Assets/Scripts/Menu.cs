@@ -12,6 +12,7 @@ public class Menu : MonoBehaviour
     private List<TextMeshProUGUI> guideText = new List<TextMeshProUGUI>();
 
     [SerializeField] private GameObject Guide;
+    [SerializeField] private GameObject Detail;
     [SerializeField] private List<Sprite> birdSprite;
 
     private void Awake()
@@ -32,6 +33,7 @@ public class Menu : MonoBehaviour
 
     private void SetGuide()
     {
+        Debug.Log(guideText.Count);
         for (int i = 0; i < guideText.Count; i++)
         {
             if (DataController.instance.data.picture[i]>0)
@@ -42,9 +44,43 @@ public class Menu : MonoBehaviour
         }
     }
 
+    private void SetDetail(int id)
+    {
+
+    }
+
     public void ClickBtn(int id)
     {
         Debug.Log(id+"번째 버튼 클릭");
+
+        SetDetail(id);
+
+        Guide.SetActive(false);
+        Detail.SetActive(true);
+    }
+
+    public void ClickExitBtn()
+    {
+        Debug.Log("나가기 버튼 클릭");
+        Guide.SetActive(true);
+        Detail.SetActive(false);
+    }
+
+    public void ClickLeftBtn()
+    {
+        Debug.Log("오른쪽 버튼 클릭");
+        NextPicture(-1);
+    }
+
+    public void ClickRightBtn()
+    {
+        Debug.Log("왼쪽 버튼 클릭");
+        NextPicture(1);
+    }
+
+    private void NextPicture(int i)
+    {
+
     }
 }
  
