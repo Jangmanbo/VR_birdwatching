@@ -2475,7 +2475,7 @@ GameObject:
   - component: {fileID: 617935427}
   - component: {fileID: 617935426}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: FeatureText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2521,7 +2521,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uD2B9\uC9D5"
+  m_text: "\uD2B9\uC9D5 : ?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a0f62560560bdc4790fdd55e6b41650, type: 2}
   m_sharedMaterial: {fileID: 1023478523263088604, guid: 3a0f62560560bdc4790fdd55e6b41650, type: 2}
@@ -3080,7 +3080,7 @@ GameObject:
   - component: {fileID: 893148799}
   - component: {fileID: 893148798}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: HabitatText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3126,7 +3126,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC11C\uC2DD\uC9C0"
+  m_text: "\uC11C\uC2DD\uC9C0 : ?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a0f62560560bdc4790fdd55e6b41650, type: 2}
   m_sharedMaterial: {fileID: 1023478523263088604, guid: 3a0f62560560bdc4790fdd55e6b41650, type: 2}
@@ -5568,8 +5568,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Guide: {fileID: 1161708692}
-  Detail: {fileID: 919263228}
-  Picture: {fileID: 2129230988}
   birdSprite:
   - {fileID: 21300000, guid: dcc1bf3baef470a489095f62bfa4d249, type: 3}
   - {fileID: 21300000, guid: 7efed406293e06a4bbb671f1c9bb8970, type: 3}
@@ -5578,6 +5576,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3680f7deec637404eba1a6b24866231c, type: 3}
   - {fileID: 21300000, guid: d7a7f3e3a2083c8409523ea6df1f89e1, type: 3}
   - {fileID: 21300000, guid: 64b2b7ae716801c4fbcbf8a6c4f692ca, type: 3}
+  Detail: {fileID: 919263228}
+  Picture: {fileID: 2129230988}
+  information:
+  - {fileID: 1866718769}
+  - {fileID: 893148798}
+  - {fileID: 1877683646}
+  - {fileID: 617935426}
+  standard: 0100000003000000050000000a000000
   screenShot: {fileID: 1094543542}
 --- !u!1001 &1377431574
 PrefabInstance:
@@ -7372,7 +7378,7 @@ GameObject:
   - component: {fileID: 1866718770}
   - component: {fileID: 1866718769}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: NameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7418,7 +7424,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uD559\uBA85"
+  m_text: "\uD559\uBA85 : ?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a0f62560560bdc4790fdd55e6b41650, type: 2}
   m_sharedMaterial: {fileID: 1023478523263088604, guid: 3a0f62560560bdc4790fdd55e6b41650, type: 2}
@@ -7548,7 +7554,7 @@ GameObject:
   - component: {fileID: 1877683647}
   - component: {fileID: 1877683646}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: PopulationText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7594,7 +7600,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uAC1C\uCCB4\uC218"
+  m_text: "\uAC1C\uCCB4\uC218 : ?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a0f62560560bdc4790fdd55e6b41650, type: 2}
   m_sharedMaterial: {fileID: 1023478523263088604, guid: 3a0f62560560bdc4790fdd55e6b41650, type: 2}

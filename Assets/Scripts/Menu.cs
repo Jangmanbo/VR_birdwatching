@@ -15,9 +15,14 @@ public class Menu : MonoBehaviour
     private int idx;    // Detail 화면 사진 현재 idx
 
     [SerializeField] private GameObject Guide;
+    [SerializeField] private List<Sprite> birdSprite;
+
+
     [SerializeField] private GameObject Detail;
     [SerializeField] private Image Picture;
-    [SerializeField] private List<Sprite> birdSprite;
+    [SerializeField] private TextMeshProUGUI[] information;
+    [SerializeField] private int[] standard;
+
 
     [SerializeField] private ScreenShot screenShot;
 
@@ -58,6 +63,7 @@ public class Menu : MonoBehaviour
 
         idx = 0;
         SetPicture();
+        SetInformation(id);
     }
 
     // 촬영했던 사진 설정
@@ -68,6 +74,16 @@ public class Menu : MonoBehaviour
         if (idx < 0) idx = 0;
 
         Picture.sprite = sprites[idx];
+    }
+
+    // 학명, 서식지, 개체수, 특징 등의 정보를 촬영 횟수에 따라 설정
+    private void SetInformation(int id)
+    {
+        Bird bird = BirdDataParse.GetBirdData(id);
+        if (DataController.instance.data.picture[id] >= standard[0]) information[0].text = "학명 : " + bird.Name;
+        if (DataController.instance.data.picture[id] >= standard[1]) information[1].text = "서식지 : " + bird.Habitat;
+        if (DataController.instance.data.picture[id] >= standard[2]) information[2].text = "개체수 : " + bird.Population;
+        if (DataController.instance.data.picture[id] >= standard[3]) information[3].text = "특징 : " + bird.Feature;
     }
 
     // ---------------버튼 클릭 리스너---------------
