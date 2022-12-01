@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 485986}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftFeatherB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 496946}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 409976}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 455850}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ R Toe01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 421168}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ L UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 416542}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ L Toe01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 422472}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ R Toe02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415922}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftFeatherD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 454172}
   - component: {fileID: 13777428}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SK_Sparrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -391,7 +391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 475462}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ R Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,7 +423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 496322}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ R Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,7 +455,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 401750}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ L Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 404510}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftFeatherA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,7 +520,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 424866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ R Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +553,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 421716}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ Pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -588,7 +588,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 414994}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ L Toe11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -620,7 +620,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 490954}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ R Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -652,7 +652,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 495872}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightFeatherD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -683,7 +683,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 486874}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ L HorseLink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -715,7 +715,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 421652}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ R Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -749,7 +749,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 454706}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftFeatherC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -780,7 +780,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 438074}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -812,7 +812,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 446356}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ R Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -844,7 +844,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 442806}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ R HorseLink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -876,7 +876,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 489910}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -912,7 +912,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400810}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightFeatherC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -943,7 +943,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 405410}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ L Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -975,7 +975,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 479044}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ R Toe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1007,7 +1007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 406082}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ R UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1040,7 +1040,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 408256}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ L Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1072,7 +1072,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 461714}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightFeatherA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1103,7 +1103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 447756}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ L Toe12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1134,7 +1134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 451360}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ L Toe02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1165,7 +1165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 414730}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ TailL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1196,7 +1196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 485492}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ L Toe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1228,7 +1228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 476254}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ L Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1261,7 +1261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 417042}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ R Toe12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1292,7 +1292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 492024}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1324,7 +1324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 410748}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ Queue de cheval 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1355,7 +1355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 445572}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ TailR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1386,7 +1386,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 490122}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ L Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1418,7 +1418,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 472548}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ L Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1450,7 +1450,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 454970}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ R Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1482,7 +1482,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 402260}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ L Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1514,7 +1514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 471956}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ R Toe11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1551,7 +1551,7 @@ GameObject:
   - component: {fileID: 7590364749670501104}
   - component: {fileID: 3191248039140191158}
   - component: {fileID: -4113563270632584354}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sparrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1655,7 +1655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28252556a958bf1468c8d05aa339e5c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 6
+  ID: 5
 --- !u!1 &198114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1665,7 +1665,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 403270}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightFeatherB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1696,7 +1696,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 481258}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPARROW_ Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

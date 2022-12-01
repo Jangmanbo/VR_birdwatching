@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 492764}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ L Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 483058}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 491770}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ Pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 457068}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ R Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 470494}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ L Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 489570}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ L Toe12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 414728}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 439060}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ R Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 474906}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ L Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,7 +300,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 443820}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 460768}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ L Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -366,7 +366,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 434560}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TailRightFeatherA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -397,7 +397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 462636}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ R Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +430,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 465480}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ R Toe12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -461,7 +461,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 453604}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 441430}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ L Toe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -524,7 +524,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 436626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ L UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -558,7 +558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 464886}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -589,7 +589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 417068}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ L Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -622,7 +622,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 438932}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ L HorseLink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -654,7 +654,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 421050}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ R Toe01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -686,7 +686,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 490104}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ R Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -718,7 +718,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 433474}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ Queue de cheval 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -749,7 +749,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 455114}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ R Toe02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -780,7 +780,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400532}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ R UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -814,7 +814,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 426680}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ R Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -846,7 +846,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 458914}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ R Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -878,7 +878,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 496822}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ R Toe11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -910,7 +910,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 411992}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -941,7 +941,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 417006}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ R Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -973,7 +973,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 469894}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ L Toe02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1004,7 +1004,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 442586}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ L Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1037,7 +1037,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 416998}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1069,7 +1069,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400750}
   - component: {fileID: 13717152}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SK_Pigeon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1196,7 +1196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 489850}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TailLeftFeatherA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1227,7 +1227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 410614}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1258,7 +1258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 430420}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ L Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1290,7 +1290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 485464}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1321,7 +1321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 408890}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1353,7 +1353,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 419088}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ L Toe01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1385,7 +1385,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 492262}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1417,7 +1417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 411808}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ R HorseLink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1454,7 +1454,7 @@ GameObject:
   - component: {fileID: 5530952168641647153}
   - component: {fileID: 4933124817190289106}
   - component: {fileID: 9091924550901919682}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pigeon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1558,7 +1558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28252556a958bf1468c8d05aa339e5c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 4
+  ID: 3
 --- !u!1 &194910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,7 +1568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 481438}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1599,7 +1599,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400826}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1631,7 +1631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 419666}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ R Toe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1663,7 +1663,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 496080}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PIGEON_ L Toe11
   m_TagString: Untagged
   m_Icon: {fileID: 0}

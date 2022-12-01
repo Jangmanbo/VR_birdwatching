@@ -34,6 +34,12 @@ public struct Bird
         get { return feature; }
         set { feature = value; }
     }
+    private int score;
+    public int Score
+    {
+        get { return score; }
+        set { score = value; }
+    }
 
     public Bird(string[] row)
     {
@@ -42,27 +48,35 @@ public struct Bird
         habitat = row[2];
         population = row[3];
         feature = row[4];
+        score = System.Int32.Parse(row[5]);
     }
 
-    public Bird(string _species, string _name, string _habitat, string _population, string _feature)
+    public Bird(string _species, string _name, string _habitat, string _population, string _feature, int _score)
     {
         species = _species;
         name = _name;
         habitat = _habitat;
         population = _population;
         feature = _feature;
+        score = _score;
     }
 }
 
 public class BirdDataParse : MonoBehaviour
 {
     private static List<Bird> birdList = new List<Bird>();
+    public static List<float> probability = new List<float>() { 0 }; // 누적 확률
 
     [SerializeField] private TextAsset csvFile = null;
 
     private void Awake()
     {
         SetBirdDictionary();
+    }
+
+    public static int BirdCount()
+    {
+        return birdList.Count;
     }
 
     public static Bird GetBirdData(int id)
@@ -88,6 +102,11 @@ public class BirdDataParse : MonoBehaviour
 
             Bird bird = new Bird(rowValues);
             birdList.Add(bird); // birdList에 추가
+            
+            float prob = float.Parse(rowValues[6]);  // 현재 확률
+            prob += probability[i - 1]; // + 이전 확률 -> 누적 확률
+            probability.Add(prob);  // 누적 확률 리스트에 추가
+            Debug.Log(prob);
         }
     }
 }

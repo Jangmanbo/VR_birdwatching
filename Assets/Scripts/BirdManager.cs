@@ -28,16 +28,29 @@ public class BirdManager : MonoBehaviour
     // 새 오브젝트 생성하여 배치
     private void Spawn()
     {
-        var obj = ObjectPool.GetObject();
+        var obj = ObjectPool.GetObject(SelectBird());
         obj.transform.position = SpawnPosition();
         obj.transform.parent = gameObject.transform;
+    }
+
+    // 어떤 종을 생성할지 결정
+    private int SelectBird()
+    {
+        float rand = Random.Range(0f, 1f);
+        for (int id = 0; id < BirdDataParse.BirdCount(); id++)
+        {
+            if (rand < BirdDataParse.probability[id + 1])
+                return id;
+        }
+        return 0;
     }
 
     // PlayerAction에서 호출
     // 씬에서 새 오브젝트 비활성화 + 0~2마리의 새 오브젝트 스폰
     public void DeleteBird(GameObject bird)
     {
-        ObjectPool.ReturnObject(bird);
+        int id = bird.GetComponent<BirdID>().ID;
+        ObjectPool.ReturnObject(bird, id);
         SpawnBirds(0, 3);
     }
 

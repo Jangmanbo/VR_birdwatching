@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 498468}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_FeatherR_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 457308}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 482372}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ TailR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 488670}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_FeatherR_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 445446}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ Queue de cheval 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 474920}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 434412}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ R Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 412748}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_FeatherR_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,7 +261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415028}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ R Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 439126}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_FeatherL_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 459764}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ L Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 439484}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +388,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 461256}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_FeatherL_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,7 +419,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415746}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ R UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -452,7 +452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 482838}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_FeatherL_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 406574}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ L UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,7 +516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 420582}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ R Toe01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -548,7 +548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 427720}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -582,7 +582,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 485208}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ R Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,7 +615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 435644}
   - component: {fileID: 13730398}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SK_Seagull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -737,7 +737,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 413898}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ R HorseLink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -769,7 +769,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 423946}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ L Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -806,7 +806,7 @@ GameObject:
   - component: {fileID: 7485213378079721298}
   - component: {fileID: -5155551106826059544}
   - component: {fileID: -906341966107624634}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Seagull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -910,7 +910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28252556a958bf1468c8d05aa339e5c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 5
+  ID: 4
 --- !u!1 &158158
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,7 +920,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 429888}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ L Toe02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -951,7 +951,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 471422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ R Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -983,7 +983,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 414286}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ L HorseLink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1015,7 +1015,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 407658}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ L Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1049,7 +1049,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 456140}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1081,7 +1081,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 475822}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ TailL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1112,7 +1112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 498152}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ R Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1144,7 +1144,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 423248}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1176,7 +1176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 453130}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ L Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1208,7 +1208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 468478}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ R Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1240,7 +1240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400538}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ L Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1272,7 +1272,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 476304}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ R Toe02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1303,7 +1303,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 465976}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ L Toe01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1335,7 +1335,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 497692}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ R Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1367,7 +1367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 414416}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_FeatherL_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1398,7 +1398,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 455376}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_FeatherR_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1429,7 +1429,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 422708}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ Pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1466,7 +1466,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 475342}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ L Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1498,7 +1498,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 403382}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SEAGULL_ L Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

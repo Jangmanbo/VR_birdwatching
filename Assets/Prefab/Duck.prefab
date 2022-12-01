@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 455042}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ R Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 422046}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 498406}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 425848}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ R Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 451158}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 445736}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ R Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 419574}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ Neck3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 431498}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ R Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,7 +267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 449292}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ R HorseLink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 469282}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ R Toe02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 499624}
   - component: {fileID: 13735146}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SK_Duck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -464,7 +464,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 412528}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 6529888162258274199}
   - component: {fileID: -953630724731860756}
   - component: {fileID: 5616064202316631927}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Duck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,7 +615,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 471922}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -646,7 +646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 430292}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ R Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 464680}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ Neck1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -710,7 +710,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 410214}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ L Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -742,7 +742,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 406904}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -774,7 +774,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 489962}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ R Toe01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -806,7 +806,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 451300}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -837,7 +837,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 416392}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -868,7 +868,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 445242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ R Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -900,7 +900,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 427988}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -931,7 +931,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 472064}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ R Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -963,7 +963,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 488386}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -994,7 +994,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 442238}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1025,7 +1025,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 451280}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1056,7 +1056,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 446866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ L Toe01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1088,7 +1088,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 476928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1119,7 +1119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 448224}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1150,7 +1150,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 484328}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ L Toe02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1181,7 +1181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 478848}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ Queue de cheval 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1212,7 +1212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 491382}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1243,7 +1243,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 409290}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ L Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1275,7 +1275,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 431492}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ Neck2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1307,7 +1307,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 460358}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ R UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1342,7 +1342,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 479708}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ L Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1374,7 +1374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 491352}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1405,7 +1405,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 439166}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ L Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1439,7 +1439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 435714}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TailR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1470,7 +1470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 489560}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1504,7 +1504,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 463058}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ L HorseLink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1536,7 +1536,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 411866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ L Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1568,7 +1568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 491982}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1599,7 +1599,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 474122}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ L UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1634,7 +1634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 494596}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TailL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1665,7 +1665,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 430954}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingLeftB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1696,7 +1696,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 425518}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1728,7 +1728,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 425018}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WingRightB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1759,7 +1759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 457332}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ L Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1791,7 +1791,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 422104}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ Neck4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1823,7 +1823,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 497600}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ Pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1859,7 +1859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 444222}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DUCK_ L Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
