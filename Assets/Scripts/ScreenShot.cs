@@ -86,6 +86,17 @@ public class ScreenShot : MonoBehaviour
         ReadScreenShotFileAndShow(imageToShow);
 #endif
     }
+
+    public List<Sprite> ReadPictures(int ID)
+    {
+#if UNITY_ANDROID
+        List<Sprite> sprites = new List<Sprite>();
+        CheckAndroidPermissionAndDo(Permission.ExternalStorageRead, () => sprites = ReadPictureList(ID));
+        return sprites;
+#else
+        return ReadPictureList(ID);
+#endif
+    }
     #endregion
     /***********************************************************************
     *                               Methods
@@ -275,5 +286,52 @@ public class ScreenShot : MonoBehaviour
         Sprite sprite = Sprite.Create(_imageTexture, rect, Vector2.one * 0.5f);
         destination.sprite = sprite;
     }
+
+    private List<Sprite> ReadPictureList(int ID)
+    {
+        string folderPath = $"{FolderPath}/{ID}";
+        if (Directory.Exists(folderPath) == false)
+        {
+            Debug.LogWarning($"{folderPath} 폴더가 존재하지 않습니다.");
+            return null;
+        }
+        
+
+        string[] allFiles=Directory.GetFiles(folderPath);
+        Debug.Log("사진 개수 : " + allFiles.Length);    // 추후 삭제
+        List<Sprite> pictureList = new List<Sprite>();
+
+        foreach (string totalPath in allFiles)
+        {
+            if (File.Exists(totalPath) == false)
+            {
+                Debug.LogWarning($"{totalPath} 파일이 존재하지 않습니다.");
+                return null;
+            }
+
+            // 저장된 스크린샷 파일 경로로부터 읽어오기
+            try
+            {
+                byte[] texBuffer = File.ReadAllBytes(totalPath);
+
+                _imageTexture = new Texture2D(1, 1, TextureFormat.RGB24, false);
+                _imageTexture.LoadImage(texBuffer);
+            }
+            catch (Exception e)
+            {
+                Debug.LogWarning($"스크린샷 파일을 읽는 데 실패하였습니다.");
+                Debug.LogWarning(e);
+                return null;
+            }
+
+
+            Rect rect = new Rect(0, 0, _imageTexture.width, _imageTexture.height);
+            Sprite sprite = Sprite.Create(_imageTexture, rect, Vector2.one * 0.5f);
+            pictureList.Add(sprite);
+        }
+        return pictureList;
+    }
+
+
     #endregion
 }

@@ -89,4 +89,10 @@ public class DataController : MonoBehaviour
     {
         SaveGameData();
     }
+
+    // 프로그램 중지 시 데이터 저장
+    private void OnApplicationQuit()
+    {
+        SaveGameData();
+    }
 }
