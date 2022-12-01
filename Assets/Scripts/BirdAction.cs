@@ -57,9 +57,11 @@ public class BirdAction : MonoBehaviour
     {
         while (true)
         {
+            yield return new WaitForSeconds(3f);
             System.Random rand = new System.Random();
 
             moveDir = Vector3.forward * (float)rand.NextDouble() * moveSpeed;
+            Debug.Log("moveDir");
 
             if (moveDir.z < 1)  // 일정 속도 이하인 경우
             {
@@ -73,6 +75,7 @@ public class BirdAction : MonoBehaviour
                 isMove = true;
 
                 turnDir = new Vector3(0, (float)rand.NextDouble() * 90 - 45, 0);
+                Debug.Log("turnDir");
 
                 bool startFly = rand.NextDouble() < flyProbability ? true : false;
                 if (isGrounded && startFly) // 지면에 있으면서 날기 시작
@@ -87,7 +90,6 @@ public class BirdAction : MonoBehaviour
             }
 
             Animate();
-            yield return new WaitForSeconds(3f);
         }
     }
 
@@ -113,6 +115,7 @@ public class BirdAction : MonoBehaviour
     // 애니메이션 전환
     private void Animate()
     {
+        Debug.Log("Animate");
         animator.SetBool("isMove", isMove);
         animator.SetBool("isGrounded", isGrounded);
     }
