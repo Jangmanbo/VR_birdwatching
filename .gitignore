@@ -51,6 +51,19 @@ ExportedObj/
 *.opendb
 *.VC.db
 
+#Package
+/[Aa]ssets/Firebase.meta
+/[Aa]ssets/Firebase/*
+/[Aa]ssets/Plugins.meta
+/[Aa]ssets/Plugins/Android.meta
+/[Aa]ssets/Plugins/Android/*
+/[Aa]ssets/Plugins/iOS.meta
+/[Aa]ssets/Plugins/iOS/*
+/[Aa]ssets/Editor Default Resources.meta
+/[Aa]ssets/Editor Default Resources/*
+/[Aa]ssets/ExternalDependencyManager.meta
+/[Aa]ssets/ExternalDependencyManager/*
+
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
