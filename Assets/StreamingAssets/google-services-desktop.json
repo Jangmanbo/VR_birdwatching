@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "781004035336",
+    "project_id": "vr-birdwatching",
+    "storage_bucket": "vr-birdwatching.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781004035336:android:c3b0eb3b4508e4b51f08bd",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.VR_birdwatching"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781004035336-ens6ok3iijnsih6eifhdne0hkc9fc2u4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSMiarmeO9VV9NrN5r9VRlIw2BbpW0kzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781004035336-ens6ok3iijnsih6eifhdne0hkc9fc2u4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
