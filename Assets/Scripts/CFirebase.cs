@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 
-public class FIrebase : MonoBehaviour
+public class CFirebase : MonoBehaviour
 {
     private FirebaseFirestore db;
     public bool available;
@@ -45,9 +45,11 @@ public class FIrebase : MonoBehaviour
     }
 
     // 유저 이름 및 랭크포인트 출력 스레드
-    private async Task GetUserRankAsync()
+    public async Task<List<RankInfo>> GetUserRankAsync()
     {
-        Query query = db.Collection("Rank").WhereGreaterThanOrEqualTo("point", 2);
+        List<RankInfo> ranks = new List<RankInfo>();
+
+        Query query = db.Collection("Rank");
         QuerySnapshot snapshot = await query.GetSnapshotAsync();
 
         foreach (DocumentSnapshot document in snapshot.Documents)
@@ -56,9 +58,12 @@ public class FIrebase : MonoBehaviour
             Dictionary<string, object> user = document.ToDictionary();
             foreach (KeyValuePair<string, object> pair in user)
             {
-                Debug.Log($"{pair.Key}: {pair.Value}");
+                ranks.Add(new RankInfo(document.Id, int.Parse(string.Format("{0}", pair.Value))));
+                //Debug.Log($"{pair.Key}: {pair.Value}");
             }
         }
+
+        return ranks;
     }
 
     // 디바이스 시리얼넘버 리턴

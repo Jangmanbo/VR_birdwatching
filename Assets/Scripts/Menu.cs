@@ -1,9 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+
+public class RankInfo
+{
+    public string name;
+    public int point;
+
+    public RankInfo(string _name, int _point)
+    {
+        name = _name;
+        point = _point;
+    }
+}
 
 public class Menu : MonoBehaviour
 {
@@ -25,7 +38,7 @@ public class Menu : MonoBehaviour
     [SerializeField] private int[] standard;
 
     // 스크립트
-    [SerializeField] private FIrebase firebase;
+    [SerializeField] private CFirebase firebase;
     [SerializeField] private ScreenShot screenShot;
 
     private void Awake()
@@ -40,8 +53,12 @@ public class Menu : MonoBehaviour
             int id = i;
             guideButtons[i].onClick.AddListener(() => ClickBtn(id));
         }
+    }
 
+    private void OnEnable()
+    {
         SetGuide();
+        SetRank();
     }
 
     private void SetGuide()
@@ -88,9 +105,15 @@ public class Menu : MonoBehaviour
         if (DataController.instance.data.picture[id] >= standard[3]) information[3].text = "특징 : " + bird.Feature;
     }
 
-    private void SetRank()
+    private async void SetRank()
     {
-        
+        Task<List<RankInfo>> task = firebase.GetUserRankAsync();
+        List<RankInfo> ranks = await task;
+
+        foreach (RankInfo rank in ranks)
+        {
+            Debug.Log($"Ranking {rank.name} : {rank.point}");
+        }
     }
 
     // ---------------버튼 클릭 리스너---------------

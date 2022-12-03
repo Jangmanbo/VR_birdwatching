@@ -1643,7 +1643,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 359775605}
-  - component: {fileID: 359775604}
+  - component: {fileID: 359775606}
   m_Layer: 0
   m_Name: Firebase
   m_TagString: Untagged
@@ -1651,19 +1651,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &359775604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 359775603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7df37dbe27e5e84b8c84df36e49cf64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  available: 0
 --- !u!4 &359775605
 Transform:
   m_ObjectHideFlags: 0
@@ -1679,6 +1666,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &359775606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359775603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7df37dbe27e5e84b8c84df36e49cf64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  available: 0
 --- !u!1001 &367245462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6287,7 +6287,7 @@ MonoBehaviour:
   - {fileID: 1877683646}
   - {fileID: 617935426}
   standard: 0100000003000000050000000a000000
-  firebase: {fileID: 0}
+  firebase: {fileID: 359775606}
   screenShot: {fileID: 1094543542}
 --- !u!1001 &1377431574
 PrefabInstance:
