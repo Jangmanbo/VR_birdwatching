@@ -14,16 +14,18 @@ public class Menu : MonoBehaviour
     private List<Sprite> sprites = new List<Sprite>();   // Detail 화면에서 보일 촬영했던 사진들
     private int idx;    // Detail 화면 사진 현재 idx
 
-    [SerializeField] private GameObject Guide;
+
+    // UI
+    [SerializeField] private GameObject Dictionary, Rank;   // 도감, 랭킹
+    [SerializeField] private GameObject Guide, Detail;  // 도감 하위 화면
+
     [SerializeField] private List<Sprite> birdSprite;
-
-
-    [SerializeField] private GameObject Detail;
     [SerializeField] private Image Picture;
     [SerializeField] private TextMeshProUGUI[] information;
     [SerializeField] private int[] standard;
 
-
+    // 스크립트
+    [SerializeField] private FIrebase firebase;
     [SerializeField] private ScreenShot screenShot;
 
     private void Awake()
@@ -36,7 +38,7 @@ public class Menu : MonoBehaviour
         for (int i = 0; i < guideButtons.Count; i++)
         {
             int id = i;
-            guideButtons[i].onClick.AddListener(()=>ClickBtn(id));
+            guideButtons[i].onClick.AddListener(() => ClickBtn(id));
         }
 
         SetGuide();
@@ -47,7 +49,7 @@ public class Menu : MonoBehaviour
         for (int id = 0; id < guideText.Count; id++)
         {
             // 1번이라도 찍은 경우 사진/학명 표시
-            if (DataController.instance.data.picture[id]>0)
+            if (DataController.instance.data.picture[id] > 0)
             {
                 guideImage[id].sprite = birdSprite[id];
                 guideText[id].text = BirdDataParse.GetBirdData(id).Name;
@@ -86,7 +88,32 @@ public class Menu : MonoBehaviour
         if (DataController.instance.data.picture[id] >= standard[3]) information[3].text = "특징 : " + bird.Feature;
     }
 
+    private void SetRank()
+    {
+        
+    }
+
     // ---------------버튼 클릭 리스너---------------
+    // 도감 클릭
+    public void ClickDictionary()
+    {
+        SetGuide();
+
+        Dictionary.SetActive(true);
+        Rank.SetActive(false);
+    }
+
+
+    // 랭킹 클릭
+    public void ClickRank()
+    {
+        SetRank();
+
+        Dictionary.SetActive(false);
+        Rank.SetActive(true);
+    }
+
+
     // 도감에서 새 사진 클릭->Detail화면으로 이동
     public void ClickBtn(int id)
     {
