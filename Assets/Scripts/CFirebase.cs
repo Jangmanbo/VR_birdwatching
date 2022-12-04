@@ -49,7 +49,7 @@ public class CFirebase : MonoBehaviour
     {
         List<RankInfo> ranks = new List<RankInfo>();
 
-        Query query = db.Collection("Rank");
+        Query query = db.Collection("Rank").OrderByDescending("point");
         QuerySnapshot snapshot = await query.GetSnapshotAsync();
 
         foreach (DocumentSnapshot document in snapshot.Documents)

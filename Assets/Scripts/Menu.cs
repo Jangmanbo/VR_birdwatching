@@ -27,14 +27,23 @@ public class Menu : MonoBehaviour
     private List<Sprite> sprites = new List<Sprite>();   // Detail 화면에서 보일 촬영했던 사진들
     private int idx;    // Detail 화면 사진 현재 idx
 
+    private List<GameObject> rankItems = new List<GameObject>();
+
 
     // UI
     [SerializeField] private GameObject Dictionary, Rank;   // 도감, 랭킹
-    [SerializeField] private GameObject Guide, Detail;  // 도감 하위 화면
 
-    [SerializeField] private List<Sprite> birdSprite;
+    // 도감 화면
+    [SerializeField] private GameObject Guide, Detail;
     [SerializeField] private Image Picture;
     [SerializeField] private TextMeshProUGUI[] information;
+
+    // 랭킹 화면
+    [SerializeField] private GameObject rankPrefab;
+    [SerializeField] private GameObject scrollContent;
+
+    // 데이터
+    [SerializeField] private List<Sprite> birdSprite;
     [SerializeField] private int[] standard;
 
     // 스크립트
@@ -58,7 +67,6 @@ public class Menu : MonoBehaviour
     private void OnEnable()
     {
         SetGuide();
-        SetRank();
     }
 
     private void SetGuide()
@@ -105,14 +113,30 @@ public class Menu : MonoBehaviour
         if (DataController.instance.data.picture[id] >= standard[3]) information[3].text = "특징 : " + bird.Feature;
     }
 
+    // 파이어베이스에서 랭킹 데이터 받아와서 스크롤뷰에 표시
     private async void SetRank()
     {
         Task<List<RankInfo>> task = firebase.GetUserRankAsync();
         List<RankInfo> ranks = await task;
 
+        int ranking = 1;    // 등수
         foreach (RankInfo rank in ranks)
         {
-            Debug.Log($"Ranking {rank.name} : {rank.point}");
+            GameObject item = Instantiate(rankPrefab);  // 오브젝트 복제
+            item.transform.SetParent(scrollContent.transform);   // 스크롤뷰의 Contents 오브젝트의 자식으로 배치
+            item.transform.localPosition = Vector3.zero;   // scale 조정
+            item.transform.localScale = Vector3.one;   // scale 조정
+            item.transform.localRotation = Quaternion.identity; // rotation 조정
+            rankItems.Add(item);    // 추후 삭제를 위해 리스트에 저장
+
+            // 등수, 이름, 포인트 설정
+            List<TextMeshProUGUI> texts=item.GetComponentsInChildren<TextMeshProUGUI>().ToList();
+            texts[0].text = ranking.ToString();
+            texts[1].text = rank.name;
+            texts[2].text = rank.point.ToString();
+
+            ranking++;
+            //Debug.Log($"Ranking {rank.name} : {rank.point}");
         }
     }
 
