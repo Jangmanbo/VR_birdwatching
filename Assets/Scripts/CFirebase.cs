@@ -7,11 +7,18 @@ using UnityEngine;
 public class CFirebase : MonoBehaviour
 {
     private FirebaseFirestore db;
+    private string userName;
+    public string UserName
+    {
+        get { return userName; }
+        set { userName = value; }
+    }
     public bool available;
 
     // Start is called before the first frame update
     void Start()
     {
+        userName = GetSerialNumber();
         db = FirebaseFirestore.DefaultInstance;
 
         // Google Play 버전 확인
@@ -37,8 +44,6 @@ public class CFirebase : MonoBehaviour
     // 나의 랭킹 포인트 업데이트
     public async Task UpdateRankAsync(int point)
     {
-        string userName = GetSerialNumber();
-
         Task<int> task = GetUserPointAsync(userName);
         point += await task;
 
@@ -93,8 +98,8 @@ public class CFirebase : MonoBehaviour
     // 디바이스 시리얼넘버 리턴
     private string GetSerialNumber()
     {
-        string identifier = SystemInfo.deviceUniqueIdentifier;
-        Debug.Log("SerialNumber : "+ identifier);
-        return identifier;
+        string serialNumber = SystemInfo.deviceUniqueIdentifier;
+        Debug.Log("SerialNumber : "+ serialNumber);
+        return serialNumber;
     }
 }

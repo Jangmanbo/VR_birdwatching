@@ -40,6 +40,7 @@ public class Menu : MonoBehaviour
 
     // 랭킹 화면
     [SerializeField] private GameObject rankPrefab;
+    [SerializeField] private GameObject myRanking;
     [SerializeField] private GameObject scrollContent;
 
     // 데이터
@@ -116,6 +117,11 @@ public class Menu : MonoBehaviour
     // 파이어베이스에서 랭킹 데이터 받아와서 스크롤뷰에 표시
     private async void SetRank()
     {
+        // 이전에 세팅했던 랭킹 정보 삭제
+        foreach (GameObject item in rankItems)
+            Destroy(item);
+        rankItems.Clear();
+
         Task<List<RankInfo>> task = firebase.GetRankingAsync();
         List<RankInfo> ranks = await task;
 
@@ -130,14 +136,23 @@ public class Menu : MonoBehaviour
             rankItems.Add(item);    // 추후 삭제를 위해 리스트에 저장
 
             // 등수, 이름, 포인트 설정
-            List<TextMeshProUGUI> texts=item.GetComponentsInChildren<TextMeshProUGUI>().ToList();
-            texts[0].text = ranking.ToString();
-            texts[1].text = rank.name;
-            texts[2].text = rank.point.ToString();
+            SetRankItem(item, ranking, rank);
+
+            // 나의 랭킹 정보(등수, 이름, 포인트) 설정
+            if (rank.name == firebase.UserName)
+                SetRankItem(myRanking, ranking, rank);
 
             ranking++;
-            //Debug.Log($"Ranking {rank.name} : {rank.point}");
         }
+    }
+
+    // 한 유저의 랭킹 정보 설정
+    private void SetRankItem(GameObject item, int ranking, RankInfo rank)
+    {
+        List<TextMeshProUGUI> texts = item.GetComponentsInChildren<TextMeshProUGUI>().ToList();
+        texts[0].text = ranking.ToString();
+        texts[1].text = rank.name.Substring(0, 5); // 유저 이름은 5자만 표시
+        texts[2].text = rank.point.ToString();
     }
 
     // ---------------버튼 클릭 리스너---------------
