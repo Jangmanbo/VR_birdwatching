@@ -1573,6 +1573,7 @@ Transform:
   - {fileID: 492024}
   - {fileID: 454172}
   - {fileID: 263702476493443104}
+  - {fileID: 4335201102723518770}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1637,12 +1638,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1be35483ac916741a032bb29e7fe631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flySpeed: 0
   moveSpeed: 2
   turnSpeed: 3
   landingInterval: 100
   flyProbability: 0.2
   moveDir: {x: 0, y: 0, z: 0}
   turnDir: {x: 0, y: 0, z: 0}
+  isMove: 0
+  isGrounded: 0
 --- !u!114 &-4113563270632584354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1764,3 +1768,79 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.09, y: 0.14, z: 0.18}
   m_Center: {x: 0, y: 0.07, z: 0}
+--- !u!1 &5253089412755532835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4335201102723518770}
+  - component: {fileID: 2613312342572775427}
+  - component: {fileID: 2565580808861260609}
+  - component: {fileID: 1433793010777291536}
+  m_Layer: 6
+  m_Name: DetectCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4335201102723518770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5253089412755532835}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 408018}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &2613312342572775427
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5253089412755532835}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &2565580808861260609
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5253089412755532835}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 7
+  m_Center: {x: 0, y: 0.07, z: 0}
+--- !u!114 &1433793010777291536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5253089412755532835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520dc41557fda1e4aab923c8ac0a97a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  birdAction: {fileID: 3191248039140191158}

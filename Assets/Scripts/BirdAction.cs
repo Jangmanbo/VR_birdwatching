@@ -8,6 +8,7 @@ public class BirdAction : MonoBehaviour
     private Rigidbody rb;
     private Animator animator;
 
+    [SerializeField] private float flySpeed;
     [SerializeField] private float moveSpeed;
     [SerializeField] private float turnSpeed;
     [SerializeField] private int landingInterval;   // 착지 동작 소요 프레임
@@ -18,7 +19,7 @@ public class BirdAction : MonoBehaviour
     public Vector3 moveDir;
     public Vector3 turnDir;
 
-    private bool isMove, isGrounded;
+    public bool isMove, isGrounded;
 
     private void Awake()
     {
@@ -53,7 +54,7 @@ public class BirdAction : MonoBehaviour
         }
     }
 
-    private IEnumerator MoveCoroutine()
+    public IEnumerator MoveCoroutine()
     {
         while (true)
         {
@@ -62,13 +63,8 @@ public class BirdAction : MonoBehaviour
 
             moveDir = Vector3.forward * (float)rand.NextDouble() * moveSpeed;
 
-            if (moveDir.z < 1)  // 일정 속도 이하인 경우
-            {
-                if (isGrounded) // 지면에 위치해있다면 정지
-                    Stop();
-                else    // 나는 중이면 속도 높임
-                    moveDir += Vector3.forward;
-            }
+            if (moveDir.z < 1 && isGrounded)  // 지면에서 일정 속도 이하인 경우
+                Stop(); // 정지
             else
             {
                 isMove = true;
@@ -76,13 +72,15 @@ public class BirdAction : MonoBehaviour
                 turnDir = new Vector3(0, (float)rand.NextDouble() * 90 - 45, 0);
 
                 bool startFly = rand.NextDouble() < flyProbability ? true : false;
+
                 if (isGrounded && startFly) // 지면에 있으면서 날기 시작
-                {
-                    rb.useGravity = false;
-                    turnDir += Vector3.right * (float)rand.NextDouble() * (-20);    // 상승
-                }
+                    Fly();
+
                 else if (!isGrounded)   // 나는 중
+                {
                     turnDir += Vector3.right * (float)rand.NextDouble() * 20;    // 상승 or 하강
+                    moveDir += Vector3.forward * flySpeed;  // 속도 높임
+                }
 
                 turnDir = turnDir * (float)rand.NextDouble() * turnSpeed;
             }
@@ -91,12 +89,21 @@ public class BirdAction : MonoBehaviour
         }
     }
 
-    // 지면에서 정지
-    private void Stop()
+    // 플레이어 피하기
+    public void AvoidPlayer()
     {
-        isMove = false;
-        isGrounded = rb.useGravity = true;
-        moveDir = turnDir = Vector3.zero;
+        Debug.Log("AvoidPlayer");
+        StopCoroutine(MoveCoroutine());
+
+        GameObject player = GameObject.Find("OVRPlayerController");
+        Vector3 dir = transform.position - player.transform.position;   // 방향벡터
+        turnDir = Quaternion.LookRotation(dir.normalized).eulerAngles;
+
+        System.Random rand = new System.Random();
+        moveDir = Vector3.forward * ((float)rand.NextDouble() * moveSpeed + flySpeed);
+
+        if (isGrounded) // 지면에 있으면 날기 시작
+            Fly();
     }
 
     // 평형 유지 (뒤집히지 않도록)
@@ -110,11 +117,21 @@ public class BirdAction : MonoBehaviour
         }
     }
 
-    // 애니메이션 전환
-    private void Animate()
+    // 날기 시작
+    private void Fly()
     {
-        animator.SetBool("isMove", isMove);
-        animator.SetBool("isGrounded", isGrounded);
+        rb.useGravity = false;
+
+        System.Random rand = new System.Random();
+        turnDir += Vector3.right * (float)rand.NextDouble() * (-20);    // 상승
+    }
+
+    // 지면에서 정지
+    private void Stop()
+    {
+        isMove = false;
+        isGrounded = rb.useGravity = true;
+        moveDir = turnDir = Vector3.zero;
     }
 
     // 지면에 착지
@@ -136,5 +153,12 @@ public class BirdAction : MonoBehaviour
             isGrounded = false;
             Animate();
         }
+    }
+
+    // 애니메이션 전환
+    private void Animate()
+    {
+        animator.SetBool("isMove", isMove);
+        animator.SetBool("isGrounded", isGrounded);
     }
 }

@@ -1,5 +1,81 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &893147821069225486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6507006015752962935}
+  - component: {fileID: 1256233669629484904}
+  - component: {fileID: 4119462820340285835}
+  - component: {fileID: 6217812812916937415}
+  m_Layer: 0
+  m_Name: DetectCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6507006015752962935
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893147821069225486}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8150677078691373894}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1256233669629484904
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893147821069225486}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &4119462820340285835
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893147821069225486}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 7
+  m_Center: {x: 0, y: 0.135, z: 0.03}
+--- !u!114 &6217812812916937415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893147821069225486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520dc41557fda1e4aab923c8ac0a97a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  birdAction: {fileID: 8150677078691656041}
 --- !u!1 &5502718344763750721
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,6 +1078,7 @@ Transform:
   - {fileID: 8150677078691360148}
   - {fileID: 8150677078691327212}
   - {fileID: 5502718344763750734}
+  - {fileID: 6507006015752962935}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1066,12 +1143,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1be35483ac916741a032bb29e7fe631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flySpeed: 0
   moveSpeed: 2
   turnSpeed: 3
   landingInterval: 100
   flyProbability: 0.2
   moveDir: {x: 0, y: 0, z: 0}
   turnDir: {x: 0, y: 0, z: 0}
+  isMove: 0
+  isGrounded: 0
 --- !u!114 &-972683737414459999
 MonoBehaviour:
   m_ObjectHideFlags: 0
