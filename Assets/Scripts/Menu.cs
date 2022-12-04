@@ -116,7 +116,7 @@ public class Menu : MonoBehaviour
     // 파이어베이스에서 랭킹 데이터 받아와서 스크롤뷰에 표시
     private async void SetRank()
     {
-        Task<List<RankInfo>> task = firebase.GetUserRankAsync();
+        Task<List<RankInfo>> task = firebase.GetRankingAsync();
         List<RankInfo> ranks = await task;
 
         int ranking = 1;    // 등수

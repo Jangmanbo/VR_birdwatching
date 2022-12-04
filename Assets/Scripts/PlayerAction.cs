@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class PlayerAction : MonoBehaviour
@@ -7,13 +8,16 @@ public class PlayerAction : MonoBehaviour
     private float originCamZ;   // 처음 카메라 위치
     private Vector3 zoomAmount = new Vector3(0, 0, 0.1f);   // fps당 카메라 이동 벡터
 
-    [SerializeField] private BirdManager birdManager;
     [SerializeField] private GameObject clipBoard;
     [SerializeField] private GameObject centerEyeAnchor;
 
-    [SerializeField] private ScreenShot screenShot;
     [SerializeField] private GameObject camera;
     [SerializeField] private CameraArea area;
+
+    // 스크립트
+    [SerializeField] private ScreenShot screenShot;
+    [SerializeField] private BirdManager birdManager;
+    [SerializeField] private CFirebase firebase;
 
     private void Awake()
     {
@@ -66,16 +70,19 @@ public class PlayerAction : MonoBehaviour
         else
         {
             Debug.Log("PlayerAction 사진 찍기 성공");
-            int ID = area.detectBird.GetComponent<BirdID>().ID;
             TakePicture(area.detectBird.GetComponent<BirdID>().ID);
-            DataController.instance.data.picture[ID]++;
         }
     }
 
     // 사진 촬영
     private void TakePicture(int ID)
     {
-        screenShot.TakeScreenShot(ID);
+        screenShot.TakeScreenShot(ID);  // 스크린샷 촬영
+        DataController.instance.data.picture[ID]++; // 촬영 횟수 업데이트
+
+        // 랭킹 포인트 업데이트
+        Task task = new Task(async() => await firebase.UpdateRankAsync(BirdDataParse.GetBirdData(ID).Score));
+        task.Start();
     }
 
     // 카메라 확대/축소

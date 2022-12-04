@@ -34,18 +34,42 @@ public class CFirebase : MonoBehaviour
         });
     }
 
-    private void UpdateRank()
+    // 나의 랭킹 포인트 업데이트
+    public async Task UpdateRankAsync(int point)
     {
-        DocumentReference docRef = db.Collection("Rank").Document("user3");
+        string userName = GetSerialNumber();
+
+        Task<int> task = GetUserPointAsync(userName);
+        point += await task;
+
+        DocumentReference docRef = db.Collection("Rank").Document(userName);
         Dictionary<string, object> dict = new Dictionary<string, object>
         {
-            {"point", 3 }
+            {"point", point }
         };
-        docRef.SetAsync(dict, SetOptions.MergeAll);
+        await docRef.SetAsync(dict, SetOptions.MergeAll);
+
+        Debug.Log(userName+ " : " + point);
     }
 
-    // 유저 이름 및 랭크포인트 출력 스레드
-    public async Task<List<RankInfo>> GetUserRankAsync()
+    // 해당 user의 랭킹 포인트 가져오기
+    private async Task<int> GetUserPointAsync(string userName)
+    {
+        DocumentReference docRef = db.Collection("Rank").Document(userName);
+        DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
+
+        if (snapshot.Exists)
+        {
+            Dictionary<string, object> user = snapshot.ToDictionary();
+            Debug.Log(userName + "point : " + string.Format("{0}", user["point"]));
+            return int.Parse(string.Format("{0}", user["point"]));
+        }
+        else
+            return 0;
+    }
+
+    // 유저 이름 및 랭크포인트 리턴
+    public async Task<List<RankInfo>> GetRankingAsync()
     {
         List<RankInfo> ranks = new List<RankInfo>();
 

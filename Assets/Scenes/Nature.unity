@@ -2043,6 +2043,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!1001 &445071716
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1515066425}
+    m_Modifications:
+    - target: {fileID: 194252, guid: 3b94957cf7db73f44ae126a319608963, type: 3}
+      propertyPath: m_Name
+      value: Pigeon
+      objectReference: {fileID: 0}
+    - target: {fileID: 449556, guid: 3b94957cf7db73f44ae126a319608963, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449556, guid: 3b94957cf7db73f44ae126a319608963, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449556, guid: 3b94957cf7db73f44ae126a319608963, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 449556, guid: 3b94957cf7db73f44ae126a319608963, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449556, guid: 3b94957cf7db73f44ae126a319608963, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 449556, guid: 3b94957cf7db73f44ae126a319608963, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449556, guid: 3b94957cf7db73f44ae126a319608963, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449556, guid: 3b94957cf7db73f44ae126a319608963, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449556, guid: 3b94957cf7db73f44ae126a319608963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449556, guid: 3b94957cf7db73f44ae126a319608963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449556, guid: 3b94957cf7db73f44ae126a319608963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085085677784884918, guid: 3b94957cf7db73f44ae126a319608963, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933124817190289106, guid: 3b94957cf7db73f44ae126a319608963, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b94957cf7db73f44ae126a319608963, type: 3}
 --- !u!1001 &449302997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2129,6 +2194,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: facc581ecff44724ba52d70ff32b4e74, type: 3}
+--- !u!4 &471181708 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 449556, guid: 3b94957cf7db73f44ae126a319608963, type: 3}
+  m_PrefabInstance: {fileID: 445071716}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &482983790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2603,12 +2673,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e96efee42768140a4a64bbf5ab2284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  birdManager: {fileID: 1515066426}
   clipBoard: {fileID: 906491972}
   centerEyeAnchor: {fileID: 333276167}
-  screenShot: {fileID: 1094543542}
   camera: {fileID: 74605640}
   area: {fileID: 2002134714}
+  screenShot: {fileID: 1094543542}
+  birdManager: {fileID: 1515066426}
+  firebase: {fileID: 359775606}
 --- !u!65 &541608025
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6646,7 +6717,8 @@ Transform:
   m_LocalPosition: {x: 179.55855, y: 30.306044, z: 138.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 471181708}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -65,7 +65,7 @@ public class BirdManager : MonoBehaviour
 
         range_X = Random.Range((range_X / 2) * -1, range_X / 2);
         range_Z = Random.Range((range_Z / 2) * -1, range_Z / 2);
-        Vector3 RandomPostion = new Vector3(range_X, 40f, range_Z);
+        Vector3 RandomPostion = new Vector3(range_X, 5f, range_Z);
 
         Vector3 respawnPosition = originPosition + RandomPostion;
         return respawnPosition;

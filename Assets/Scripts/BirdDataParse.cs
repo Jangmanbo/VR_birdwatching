@@ -106,7 +106,6 @@ public class BirdDataParse : MonoBehaviour
             float prob = float.Parse(rowValues[6]);  // 현재 확률
             prob += probability[i - 1]; // + 이전 확률 -> 누적 확률
             probability.Add(prob);  // 누적 확률 리스트에 추가
-            Debug.Log(prob);
         }
     }
 }
