@@ -1453,7 +1453,7 @@ GameObject:
   - component: {fileID: 2085085677784884918}
   - component: {fileID: 5530952168641647153}
   - component: {fileID: 4933124817190289106}
-  - component: {fileID: 9091924550901919682}
+  - component: {fileID: -8201420724205524178}
   m_Layer: 6
   m_Name: Pigeon
   m_TagString: Untagged
@@ -1550,7 +1550,7 @@ MonoBehaviour:
   turnDir: {x: 0, y: 0, z: 0}
   isMove: 0
   isGrounded: 0
---- !u!114 &9091924550901919682
+--- !u!114 &-8201420724205524178
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1559,10 +1559,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 194252}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28252556a958bf1468c8d05aa339e5c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 627ad2b0fb8e99d40865179aaa46efc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 3
+  birdInfo: {fileID: 11400000, guid: 6967c11e5e8ade44fac9b902facf3bb4, type: 2}
 --- !u!1 &194910
 GameObject:
   m_ObjectHideFlags: 0

@@ -49,7 +49,7 @@ public class BirdManager : MonoBehaviour
     // 씬에서 새 오브젝트 비활성화 + 0~2마리의 새 오브젝트 스폰
     public void DeleteBird(GameObject bird)
     {
-        int id = bird.GetComponent<BirdID>().ID;
+        int id = bird.GetComponent<BirdData>().birdInfo.ID;
         ObjectPool.ReturnObject(bird, id);
         SpawnBirds(0, 3);
     }

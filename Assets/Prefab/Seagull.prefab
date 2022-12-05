@@ -805,7 +805,7 @@ GameObject:
   - component: {fileID: -6169703675093020162}
   - component: {fileID: 7485213378079721298}
   - component: {fileID: -5155551106826059544}
-  - component: {fileID: -906341966107624634}
+  - component: {fileID: 8739788026633575553}
   m_Layer: 6
   m_Name: Seagull
   m_TagString: Untagged
@@ -902,7 +902,7 @@ MonoBehaviour:
   turnDir: {x: 0, y: 0, z: 0}
   isMove: 0
   isGrounded: 0
---- !u!114 &-906341966107624634
+--- !u!114 &8739788026633575553
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -911,10 +911,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 152858}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28252556a958bf1468c8d05aa339e5c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 627ad2b0fb8e99d40865179aaa46efc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 4
+  birdInfo: {fileID: 11400000, guid: de62af03e74249e4db4e959b6f561617, type: 2}
 --- !u!1 &158158
 GameObject:
   m_ObjectHideFlags: 0

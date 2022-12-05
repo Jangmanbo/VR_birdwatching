@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BirdID : MonoBehaviour
+public class BirdData : MonoBehaviour
 {
-    public int ID;
+    public BirdInfo birdInfo;
 }

@@ -1550,7 +1550,7 @@ GameObject:
   - component: {fileID: 3724922314643323278}
   - component: {fileID: 7590364749670501104}
   - component: {fileID: 3191248039140191158}
-  - component: {fileID: -4113563270632584354}
+  - component: {fileID: 1591403054117499401}
   m_Layer: 6
   m_Name: Sparrow
   m_TagString: Untagged
@@ -1647,7 +1647,7 @@ MonoBehaviour:
   turnDir: {x: 0, y: 0, z: 0}
   isMove: 0
   isGrounded: 0
---- !u!114 &-4113563270632584354
+--- !u!114 &1591403054117499401
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1656,10 +1656,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 197728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28252556a958bf1468c8d05aa339e5c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 627ad2b0fb8e99d40865179aaa46efc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 5
+  birdInfo: {fileID: 11400000, guid: 1689283f602a2854f8b1ff5c30103f30, type: 2}
 --- !u!1 &198114
 GameObject:
   m_ObjectHideFlags: 0

@@ -70,7 +70,7 @@ public class PlayerAction : MonoBehaviour
         else
         {
             Debug.Log("PlayerAction 사진 찍기 성공");
-            TakePicture(area.detectBird.GetComponent<BirdID>().ID);
+            TakePicture(area.detectBird.GetComponent<BirdData>().birdInfo.ID);
         }
     }
 

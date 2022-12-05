@@ -7,14 +7,7 @@ public class BirdAction : MonoBehaviour
     private Transform tr;
     private Rigidbody rb;
     private Animator animator;
-
-    [SerializeField] private float flySpeed;
-    [SerializeField] private float moveSpeed;
-    [SerializeField] private float turnSpeed;
-    [SerializeField] private int landingInterval;   // 착지 동작 소요 프레임
-
-    [Range(0f, 1f)]
-    [SerializeField] private float flyProbability;
+    private BirdInfo birdInfo;
 
     public Vector3 moveDir;
     public Vector3 turnDir;
@@ -27,6 +20,8 @@ public class BirdAction : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         animator = GetComponent<Animator>();
+
+        birdInfo = GetComponent<BirdData>().birdInfo;
     }
 
     // Start is called before the first frame update
@@ -71,7 +66,7 @@ public class BirdAction : MonoBehaviour
             yield return new WaitForSeconds(3f);
             System.Random rand = new System.Random();
 
-            moveDir = Vector3.forward * (float)rand.NextDouble() * moveSpeed;
+            moveDir = Vector3.forward * (float)rand.NextDouble() * birdInfo.moveSpeed;
 
             if (moveDir.z < 1 && isGrounded)  // 지면에서 일정 속도 이하인 경우
                 Stop(); // 정지
@@ -81,7 +76,7 @@ public class BirdAction : MonoBehaviour
 
                 turnDir = new Vector3(0, (float)rand.NextDouble() * 90 - 45, 0);
 
-                bool startFly = rand.NextDouble() < flyProbability ? true : false;
+                bool startFly = rand.NextDouble() < birdInfo.flyProbability ? true : false;
 
                 if (isGrounded && startFly) // 지면에 있으면서 날기 시작
                     Fly();
@@ -89,10 +84,10 @@ public class BirdAction : MonoBehaviour
                 else if (!isGrounded)   // 나는 중
                 {
                     turnDir += Vector3.right * (float)rand.NextDouble() * 20;    // 상승 or 하강
-                    moveDir += Vector3.forward * flySpeed;  // 속도 높임
+                    moveDir += Vector3.forward * birdInfo.flySpeed;  // 속도 높임
                 }
 
-                turnDir = turnDir * (float)rand.NextDouble() * turnSpeed;
+                turnDir = turnDir * (float)rand.NextDouble() * birdInfo.turnSpeed;
             }
 
             Animate();
@@ -110,7 +105,7 @@ public class BirdAction : MonoBehaviour
         turnDir = Quaternion.LookRotation(dir.normalized).eulerAngles;
 
         System.Random rand = new System.Random();
-        moveDir = Vector3.forward * ((float)rand.NextDouble() * moveSpeed + flySpeed);
+        moveDir = Vector3.forward * ((float)rand.NextDouble() * birdInfo.moveSpeed + birdInfo.flySpeed);
 
         if (isGrounded) // 지면에 있으면 날기 시작
             Fly();
@@ -119,8 +114,8 @@ public class BirdAction : MonoBehaviour
     // 평형 유지 (뒤집히지 않도록)
     private IEnumerator Balance()
     {
-        float interval = 1f / landingInterval;
-        for (int i = 0; i < landingInterval; i++)
+        float interval = 1f / birdInfo.landingInterval;
+        for (int i = 0; i < birdInfo.landingInterval; i++)
         {
             tr.rotation = Quaternion.Slerp(tr.rotation, Quaternion.Euler(new Vector3(0, tr.rotation.eulerAngles.y)), interval * Time.deltaTime);
             yield return new WaitForFixedUpdate();
