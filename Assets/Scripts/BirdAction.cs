@@ -52,6 +52,16 @@ public class BirdAction : MonoBehaviour
             turnDir.z = 0;
             StartCoroutine(Balance());
         }
+
+        /*
+        Debug.DrawRay(tr.position, tr.forward * 3f, Color.blue);
+        RaycastHit hit;
+        if (Physics.Raycast(tr.position, tr.forward, out hit, 5f, LayerMask.NameToLayer("Obstacle")))
+        {
+            turnDir = Quaternion.LookRotation(tr.rotation.eulerAngles - new Vector3(0, -90, 0)).eulerAngles;
+            Debug.Log("raycast : " + turnDir.x + ", " + turnDir.y + ", " + turnDir.z);
+        }
+        */
     }
 
     public IEnumerator MoveCoroutine()

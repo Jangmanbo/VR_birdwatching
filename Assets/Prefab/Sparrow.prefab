@@ -1638,7 +1638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1be35483ac916741a032bb29e7fe631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flySpeed: 0
+  flySpeed: 1.5
   moveSpeed: 2
   turnSpeed: 3
   landingInterval: 100
@@ -1780,7 +1780,7 @@ GameObject:
   - component: {fileID: 2613312342572775427}
   - component: {fileID: 2565580808861260609}
   - component: {fileID: 1433793010777291536}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DetectCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1826,7 +1826,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5253089412755532835}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 7
