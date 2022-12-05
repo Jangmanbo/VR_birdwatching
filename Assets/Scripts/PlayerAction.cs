@@ -8,6 +8,10 @@ public class PlayerAction : MonoBehaviour
     private float originCamZ;   // 처음 카메라 위치
     private Vector3 zoomAmount = new Vector3(0, 0, 0.1f);   // fps당 카메라 이동 벡터
 
+    private Vector3 position;
+    [SerializeField] private AudioSource step;
+    [SerializeField] private AudioSource shutter;
+
     [SerializeField] private GameObject clipBoard;
     [SerializeField] private GameObject centerEyeAnchor;
 
@@ -22,12 +26,21 @@ public class PlayerAction : MonoBehaviour
     private void Awake()
     {
         originCamZ = camera.transform.localPosition.z + zoomAmount.z;
+
+        position = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
         BtnDown();
+
+        // 발자국 소리
+        if (position != transform.position)
+            step.mute = false;
+        else
+            step.mute = true;
+        position = transform.position;
     }
 
     private void BtnDown()
@@ -61,6 +74,8 @@ public class PlayerAction : MonoBehaviour
     private void TryTakePicture()
     {
         Debug.Log("PlayerAction 사진 찍기 시도");
+        shutter.Play();
+        
         // 새 감지 X
         if (area.detectBird == null)
         {

@@ -7,6 +7,7 @@ public class BirdAction : MonoBehaviour
     private Transform tr;
     private Rigidbody rb;
     private Animator animator;
+    private AudioSource audio;
     private BirdInfo birdInfo;
 
     public Vector3 moveDir;
@@ -20,6 +21,7 @@ public class BirdAction : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         animator = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
 
         birdInfo = GetComponent<BirdData>().birdInfo;
     }
@@ -27,6 +29,7 @@ public class BirdAction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(AudioCoroutine());
         StartCoroutine(MoveCoroutine());
     }
 
@@ -57,6 +60,27 @@ public class BirdAction : MonoBehaviour
             Debug.Log("raycast : " + turnDir.x + ", " + turnDir.y + ", " + turnDir.z);
         }
         */
+    }
+
+    public IEnumerator AudioCoroutine()
+    {
+        while (true)
+        {
+            System.Random rand = new System.Random();
+            yield return new WaitForSeconds(rand.Next(3, 5));
+
+            bool play = rand.Next(0, 2) == 0 ? false : true;
+            if (play)
+            {
+                Debug.Log("Play");
+                audio.Play();
+            }
+            else
+            {
+                Debug.Log("Stop");
+                audio.Stop();
+            }
+        }
     }
 
     public IEnumerator MoveCoroutine()
