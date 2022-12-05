@@ -109,9 +109,13 @@ public class Menu : MonoBehaviour
     {
         Bird bird = BirdDataParse.GetBirdData(id);
         if (DataController.instance.data.picture[id] >= standard[0]) information[0].text = "학명 : " + bird.Name;
+        else information[0].text = "학명 : ?";
         if (DataController.instance.data.picture[id] >= standard[1]) information[1].text = "서식지 : " + bird.Habitat;
-        if (DataController.instance.data.picture[id] >= standard[2]) information[2].text = "개체수 : " + bird.Population;
+        else information[1].text = "서식지 : ?";
+        if (DataController.instance.data.picture[id] >= standard[2]) information[2].text = "멸종위기등급 : " + bird.Population;
+        else information[2].text = "멸종위기등급 : ?"; 
         if (DataController.instance.data.picture[id] >= standard[3]) information[3].text = "특징 : " + bird.Feature;
+        else information[3].text = "특징 : ?";
     }
 
     // 파이어베이스에서 랭킹 데이터 받아와서 스크롤뷰에 표시
